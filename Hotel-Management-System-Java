@@ -1,0 +1,26 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("HOTEL MANAGEMENT SYSTEM");
+
+        System.out.print("Enter customer name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter room number: ");
+        int room = sc.nextInt();
+
+        System.out.print("Enter number of days: ");
+        int days = sc.nextInt();
+
+        int bill = days * 1000;
+
+        System.out.println("\n--- BOOKING DETAILS ---");
+        System.out.println("Customer: " + name);
+        System.out.println("Room: " + room);
+        System.out.println("Days: " + days);
+        System.out.println("Bill: Rs." + bill);
+    }
+}
